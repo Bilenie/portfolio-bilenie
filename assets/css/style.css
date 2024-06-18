@@ -103,10 +103,15 @@ h3{
        
 }
 /* property for the h2 & h2 border of the main body(about me,work, & contact me.) */
-h2{
 
-}
+ h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 10px;  
+ }
 .headers{
+   
     min-width:220px ;
     border-right: 1px solid var(--bg);
     border-width: 3px;   
@@ -184,12 +189,12 @@ h2{
 /* ******************************************************************************** */
 /* footer section and its properties */
 footer nav{
-    padding-top: 15px;   
-    padding-bottom: 20px; 
+    padding: 30px;   
+    margin: 40px;
 }
 footer  li {
     display:inline;
-    padding:10px;  
+    padding:30px;  
 }
 footer  a{
     color:var(--bg);
