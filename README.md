@@ -26,8 +26,8 @@ N/A
 
 ##Usage
 
-Open the deployed URL in the web browser. "#"
-Open the repo URL by coping this ling."#"
+Open the deployed URL in the web browser. "https://bilenie.github.io/portfolio-bilenie/"
+Open the repo URL by coping this link to the web browser."https://github.com/Bilenie/portfolio-bilenie.git"
 ![alt text](./assets/images/challenge2_720.png)
 
 The deployed web page should look similar to the above image formating and structure.
