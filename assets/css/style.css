@@ -68,15 +68,13 @@ header a{
     }
 /* ****************************************************** */
 
-/* h2{
+.container{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-right:10px;
-    font-size: 40px;
-    font-weight: bold;
+    justify-content: flex-start;
    
-} */
+} 
  /* The font h3 on the image with its background set to this properties */
 h3{
     font-size:20px;
@@ -112,9 +110,9 @@ h3{
  }
 .headers{
    
-    min-width:220px ;
-    border-right: 1px solid var(--bg);
-    border-width: 3px;   
+  min-width:220px ;
+  border-right: 1px solid var(--bg);
+  border-width: 3px;   
 }
 /* ************************************************************************** */
 /* IMAGE PROPERTIES */
@@ -126,7 +124,7 @@ h3{
     width: 100%;
     height:100%;
     padding-left: 30px;
-    
+     
 }
 /* four target the individual properties of the images and its background, in the work part of the main body. */
 .four{
@@ -134,9 +132,9 @@ h3{
     width: 100%;  
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: 20% 30%;   
+    background-position: 20% 30%;  
+   
  }
-
 
 /*  Adding background-image to the work section and set the properties. */
 #surf{
@@ -187,16 +185,16 @@ h3{
     margin: 15px ;
 }
 /* ******************************************************************************** */
-/* footer section and its properties */
-footer nav{
+/* bottomsection and its properties */
+.bottom nav{
     padding: 30px;   
     margin: 40px;
 }
-footer  li {
+.bottom li {
     display:inline;
     padding:30px;  
 }
-footer  a{
+.bottom  a{
     color:var(--bg);
     font-weight: bold;
     font-size: 20px; 
