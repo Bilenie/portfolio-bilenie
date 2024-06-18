@@ -181,7 +181,6 @@ h3{
     position: relative;
     background-image: url("../images/building.jpg");
     border:3px solid var(--bg);
-    box-shadow: #b8740d;
     margin: 15px ;
 }
 /* ******************************************************************************** */
@@ -201,12 +200,11 @@ h3{
     padding-left: 50px; 
 }
 /* ******************************************************************************** */
-/*  CSS pseudo-elements like ::before or ::after and apply pointer-events: */
-/* Psudo class and Psudo element */
+/* Psudo class and Psudo element will be added*/
 a:hover{
     color:var(--font);
 
-
-
-
-/* mediaquery code is written below for laptop/tab/mobile/ */
+/* .slcpr:hover{
+ color:var(--bg);
+} */
+/* mediaquery code is written below for laptop/tab/mobile/ will be added  */
