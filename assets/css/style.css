@@ -13,6 +13,9 @@ body{
 /* ************************************************************************ */
 /* Header section properties  */
 header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
     padding: 20px 20px 20px 0;
     background-color: #b8740d;
     color: var(--font);;
@@ -67,14 +70,12 @@ header a{
     color: var(--font);
     }
 /* ****************************************************** */
-
+/*container is the properties set for the entire main body */
 .container{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-   
-} 
+}
  /* The font h3 on the image with its background set to this properties */
 h3{
     font-size:20px;
@@ -97,22 +98,24 @@ h3{
     padding-left:2rem;
     padding-right: 2rem;
     margin-bottom: 20px;
-    color:var(--bg);
-       
+    color:var(--bg);    
 }
+
 /* property for the h2 & h2 border of the main body(about me,work, & contact me.) */
 
  h2{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     text-align: end;
-    padding-right: 10px;  
+    padding-right: 15px;  
  }
 .headers{
-   
-  min-width:220px ;
-  border-right: 1px solid var(--bg);
-  border-width: 3px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width:220px ;
+    border-right: 1px solid var(--bg);
+    border-width: 3px;   
 }
 /* ************************************************************************** */
 /* IMAGE PROPERTIES */
@@ -123,8 +126,7 @@ h3{
     flex-direction: row;
     width: 100%;
     height:100%;
-    padding-left: 30px;
-     
+    padding-left: 30px;    
 }
 /* four target the individual properties of the images and its background, in the work part of the main body. */
 .four{
@@ -132,8 +134,7 @@ h3{
     width: 100%;  
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: 20% 30%;  
-   
+    background-position: 20% 30%;   
  }
 
 /*  Adding background-image to the work section and set the properties. */
