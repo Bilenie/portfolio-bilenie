@@ -7,13 +7,13 @@
 
 -By following the Acceptance Criteria,
 
--Applied flexbox, media queries, and CSS variables on my web application.
--My web application is a deployed portfolio of my work.
--I built a Webpage to show-case my work. It introduce recent photo, name, and links to sections about myself, my work, and how to contact.
--When click one of the links in the navigation the UI scrolls to the corresponding section.
--When click the links "work" in the navigation the UI scrolls to the images part of the Webpage.
--When the link scrolls to the application's image the first image is  presented larger in size than the others.
--When clicking on the images of the applications it will direct to the deployed application.
+ -Applied flexbox, media queries, and CSS variables on my web application.
+ -My web application is a deployed portfolio of my work.
+ -I built a Webpage to show-case my work. It introduce recent photo, name, and links to sections about myself, my work, and how to contact.
+ -When click one of the links in the navigation the UI scrolls to the corresponding section.
+ -When click the links "work" in the navigation the UI scrolls to the images part of the Webpage.
+ -When the link scrolls to the application's image the first image is  presented larger in size than the others.
+ -When clicking on the images of the applications it will direct to the deployed application.
 
 
 ##Table of content
