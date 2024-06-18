@@ -27,6 +27,7 @@ N/A
 ##Usage
 
 Open the deployed URL in the web browser. "#"
+Open the repo URL by coping this ling."#"
 ![alt text](./assets/images/challenge2_720.png)
 
 The deployed web page should look similar to the above image formating and structure.
