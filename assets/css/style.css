@@ -212,19 +212,19 @@ h3{
 a:hover{
     color:var(--font);}
 #surf:hover {
-    box-shadow: inset 50px 50px 80px var(--hover);
+    box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
 #LED:hover {
-    box-shadow: inset 50px 50px 80px var(--hover);
+    box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
 #Calculator:hover {
-    box-shadow: inset 50px 50px 80px var(--hover);
+    box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
 #Puzzels:hover {
-    box-shadow: inset 80px 80px 80px var(--hover);
+    box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
 #Run:hover {
-    box-shadow: inset 50px 50px 80px var(--hover);
+    box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
 
 
