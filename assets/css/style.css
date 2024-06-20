@@ -2,12 +2,13 @@
 :root{
     --bg:rgb(54, 76, 116);
     --font:#b7cad3;
+    --hover:#b8740d;
 }
 * {
     box-sizing: border-box;
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(231, 212, 183);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* ************************************************************************ */
@@ -17,7 +18,7 @@ header {
     flex-wrap: wrap;
     justify-content:space-between;
     padding: 20px 20px 20px 0;
-    background-color: #b8740d;
+    background-color: var(--hover);
     color: var(--font);;
 }
 header h1 {
@@ -112,7 +113,6 @@ h3{
 .headers{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     min-width:220px ;
     border-right: 1px solid var(--bg);
     border-width: 3px;   
@@ -122,19 +122,27 @@ h3{
 /* img target the entire container that hold the images section. */
 .img{
     display:flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
-    height:100%;
-    padding-left: 30px;    
+    height:100%; 
+    padding-left: 30px;  
+    
 }
 /* four target the individual properties of the images and its background, in the work part of the main body. */
 .four{
-    height: 10rem;  
+    height:100%;  
     width: 100%;  
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: 20% 30%;   
+    background-position: 20% 30%; 
+
+    outline: 3px solid var(--bg);
+    outline-offset: -3px;
+    border-radius: 30px;
+    transition: all .5s ease-in-out;
+      
  }
 
 /*  Adding background-image to the work section and set the properties. */
@@ -143,7 +151,6 @@ h3{
     height: 30rem;
     position:relative;/* set the position relative because the writing-style properties of h3 is in a position absolute,so that it be placed in a correct position.*/
     background-image: url("../images/surf-report.jpg"); 
-    border:3px solid var(--bg);
     margin: 15px ;
 }
 /* add a github link to this image */
@@ -158,30 +165,30 @@ h3{
 #LED{
     flex: 2 1 40%;
     position: relative;
+    height: 20rem;
     background-image: url("../images/led-wall.jpg");
-    border:3px solid var(--bg);
     margin: 15px ;
    
 }
 #Calculator{
     flex:2 1 40%;
     position: relative;
+    height: 20rem;
     background-image: url("../images/calculator.jpg");
-    border:3px solid var(--bg);
     margin: 15px ;
 }
 #Puzzels{
     flex:2 1 40%;
     position: relative;
+    height: 20rem;
     background-image: url("../images/puzzels.jpg");
-    border:3px solid var(--bg);
     margin: 15px ;
 }
 #Run{
     flex:2 1 40%;
     position: relative;
+    height: 20rem;
     background-image: url("../images/building.jpg");
-    border:3px solid var(--bg);
     margin: 15px ;
 }
 /* ******************************************************************************** */
@@ -203,9 +210,32 @@ h3{
 /* ******************************************************************************** */
 /* Psudo class and Psudo element will be added*/
 a:hover{
-    color:var(--font);
+    color:var(--font);}
+#surf:hover {
+    box-shadow: inset 50px 50px 80px var(--hover);
+}
+#LED:hover {
+    box-shadow: inset 50px 50px 80px var(--hover);
+}
+#Calculator:hover {
+    box-shadow: inset 50px 50px 80px var(--hover);
+}
+#Puzzels:hover {
+    box-shadow: inset 80px 80px 80px var(--hover);
+}
+#Run:hover {
+    box-shadow: inset 50px 50px 80px var(--hover);
+}
 
-/* .slcpr:hover{
- color:var(--bg);
-} */
+
 /* mediaquery code is written below for laptop/tab/mobile/ will be added  */
+
+@media screen and (max-width:px){
+    header{
+
+    }
+    main{
+
+    }
+    
+}
