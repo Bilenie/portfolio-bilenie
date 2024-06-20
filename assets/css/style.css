@@ -113,9 +113,11 @@ h3{
 .headers{
     display: flex;
     flex-wrap: wrap;
+    justify-content: end;
     min-width:220px ;
     border-right: 1px solid var(--bg);
-    border-width: 3px;   
+    border-width: 3px;  
+     
 }
 /* ************************************************************************** */
 /* IMAGE PROPERTIES */
