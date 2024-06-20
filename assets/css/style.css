@@ -194,7 +194,7 @@ h3{
     margin: 15px ;
 }
 /* ******************************************************************************** */
-/* bottomsection and its properties */
+/* bottom section and its properties */
 .bottom nav{
     padding: 30px;   
     margin: 40px;
@@ -212,7 +212,9 @@ h3{
 /* ******************************************************************************** */
 /* Psudo class and Psudo element will be added*/
 a:hover{
-    color:var(--font);}
+    color:var(--font);
+}
+
 #surf:hover {
     box-shadow: inset 50px 50px 50px 80px var(--hover);
 }
