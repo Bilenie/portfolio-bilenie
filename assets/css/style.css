@@ -8,6 +8,8 @@
     box-sizing: border-box;
 }
 body{
+    margin: 0px;
+    padding: 0px;
     background-color: rgb(231, 212, 183);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -16,6 +18,7 @@ body{
 header {
     display:flex;
     flex-wrap: wrap;
+    width:100%;
     justify-content:space-between;
     padding: 20px 20px 20px 0;
     background-color: var(--hover);
@@ -52,7 +55,19 @@ header a{
     height: 100%;
     border:1px solid red;
     border-radius: 25% 10%;
- }
+    @media(max-width: 320px){
+       
+        border-color: #b8740d;
+       
+    }
+    @media (max-width: 599px) 
+        {
+            width:100px;
+            height:100px; 
+        }
+        
+    }
+ 
  /* the subtitle section background and it's properties */
 #alone{
     display: flex;
@@ -61,7 +76,13 @@ header a{
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/creative-image.jpg");
-    background-size: cover;  
+    background-size: cover; 
+    @media(max-width: 320px){
+        
+        border:1px solid #b8740d;
+       
+    }
+  
 }
 #subtitle{
     display:flex;
@@ -69,13 +90,14 @@ header a{
     right:40px; bottom: 20px;
     font-size: 25px;
     color: var(--font);
+  
     }
 /* ****************************************************** */
 /*container is the properties set for the entire main body */
 .container{
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
 }
  /* The font h3 on the image with its background set to this properties */
 h3{
@@ -90,17 +112,32 @@ h3{
  position:absolute;
  bottom:2rem ;
  color: var(--font);
+
 }
 /* The properties for the 3 section in the main body(about me,work, & contact me.) on the main body */
 .about-me-work{
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
+    width:100%;
     padding-left:2rem;
     padding-right: 2rem;
     margin-bottom: 20px;
-    color:var(--bg);    
+    color:var(--bg);
+    @media (max-width: 600px) {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
 }
+
+ p{
+    display: flex;
+    flex-wrap: wrap;
+    line-height:2; 
+    padding-left: 15px;
+} 
 
 /* property for the h2 & h2 border of the main body(about me,work, & contact me.) */
 
@@ -108,16 +145,17 @@ h3{
     font-size: 50px;
     font-weight: bold;
     text-align: end;
-    padding-right: 15px;  
+    padding: 15px;  
+    
  }
 .headers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
+   
     min-width:220px ;
     border-right: 1px solid var(--bg);
     border-width: 3px;  
-     
+    @media(max-width: 600px) {
+        border:none;
+    } 
 }
 /* ************************************************************************** */
 /* IMAGE PROPERTIES */
@@ -126,11 +164,16 @@ h3{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    height:100%; 
-    padding-left: 30px;  
-    
+    justify-content:flex-start;
+    width:100%;
+    height:100%;
+    padding-left: 30px;
+    @media (max-width: 600px) {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* four target the individual properties of the images and its background, in the work part of the main body. */
 .four{
@@ -145,17 +188,20 @@ h3{
     border-radius: 30px;
     transition: all .5s ease-in-out;
       
- }
+}
 
 /*  Adding background-image to the work section and set the properties. */
 #surf{
-    flex:1 1 100%;
+    flex:1 1 60%;
     height: 30rem;
     position:relative;/* set the position relative because the writing-style properties of h3 is in a position absolute,so that it be placed in a correct position.*/
     background-image: url("../images/surf-report.jpg"); 
     margin: 15px ;
+    @media (max-width: 600px) {
+        flex: none;
+    }
 }
-/* add a github link to this image */
+/*Add a properties to the link to the above image */
 #surf a {
     position: absolute;
     top: 0;
@@ -170,6 +216,9 @@ h3{
     height: 20rem;
     background-image: url("../images/led-wall.jpg");
     margin: 15px ;
+    @media (max-width: 600px) {
+        flex: none;
+    }
    
 }
 #Calculator{
@@ -178,6 +227,9 @@ h3{
     height: 20rem;
     background-image: url("../images/calculator.jpg");
     margin: 15px ;
+    @media (max-width: 600px) {
+        flex: none;
+    }
 }
 #Puzzels{
     flex:2 1 40%;
@@ -185,6 +237,9 @@ h3{
     height: 20rem;
     background-image: url("../images/puzzels.jpg");
     margin: 15px ;
+    @media (max-width: 600px) {
+        flex: none;
+    }
 }
 #Run{
     flex:2 1 40%;
@@ -192,22 +247,37 @@ h3{
     height: 20rem;
     background-image: url("../images/building.jpg");
     margin: 15px ;
+    @media (max-width: 600px) {
+        flex: none;
+    }
 }
 /* ******************************************************************************** */
 /* bottom section and its properties */
 .bottom nav{
-    padding: 30px;   
-    margin: 40px;
+
+    padding: 25px;   
+   
 }
 .bottom li {
     display:inline;
-    padding:30px;  
+    padding:30px; 
+    @media (max-width: 768px) {
+        display: block;
+    } 
+    @media (max-width: 992px) {
+        display: block;
+    } 
+    @media (max-width: 1024px) {
+        display: block;
+    } 
 }
 .bottom  a{
     color:var(--bg);
     font-weight: bold;
     font-size: 20px; 
-    padding-left: 50px; 
+    padding: 20px; 
+   
+
 }
 /* ******************************************************************************** */
 /* Psudo class and Psudo element will be added*/
@@ -216,30 +286,114 @@ a:hover{
 }
 
 #surf:hover {
-    box-shadow: inset 50px 50px 50px 80px var(--hover);
+    box-shadow: inset 0 0 80px var(--hover);
 }
 #LED:hover {
-    box-shadow: inset 50px 50px 50px 80px var(--hover);
+    box-shadow: inset 0 0 80px  var(--hover);
 }
 #Calculator:hover {
-    box-shadow: inset 50px 50px 50px 80px var(--hover);
+    box-shadow: inset 0 0 80px  var(--hover);
 }
 #Puzzels:hover {
-    box-shadow: inset 50px 50px 50px 80px var(--hover);
+    box-shadow: inset 0 0 80px  var(--hover);
 }
 #Run:hover {
-    box-shadow: inset 50px 50px 50px 80px var(--hover);
+    box-shadow: inset 0 0 80px  var(--hover);
 }
 
 
-/* mediaquery code is written below for laptop/tab/mobile/ will be added  */
-
-@media screen and (max-width:px){
+@media screen and (max-width: 720px) {
+    body {
+     
+        background-color: var(--font);
+    }
+    /* *******header properties start here */
     header{
-
-    }
-    main{
-
-    }
+        display:flex;
+        flex-direction: column; 
+        align-items: center;
+        background-color: var(--font);
     
+    }
+    header h1{
+        padding:10px;
+        font-size: 30px;
+    }
+    .b {
+        text-align: center;
+        font-size: 10px;
+    }
+   
+ /* **********************end of header media query*********** */
+
+#img-profile{
+        width:150px;
+        height:150px; 
+    }
+#subtitle{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    bottom: 10px; left: 130px;
+    font-size: 15px;
+    width: 100%;
+  }
+  /* to make the profile image center */
+#alone{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
+/* ********end of subtitle header********* */
+/* ****main section part of body */
+
+  .about-me-work h2{
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid var(--bg);
+    padding: 10px;
+}
+.headers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pre{
+    text-align:center;
+    line-height:2;
+    padding-left:30px;
+    color: var(--bg);
+    font-weight: bold; 
+    font-size:10px;
+}
+.bottom nav li a{
+    font-size: 10px;
+     padding-left:2px;
+  }
+
+
+  .writting-style{
+      font-size: 8px;
+  }
+  h3{
+      font-size:10px;
+  }
+  .bottom a{
+    display:flex;
+    justify-content: center;
+  }
+  
+}
+
+
+/* ********************************* */
+
+/* end of main body */
+@media screen and (max-width: 320px) {
+ #subtitle h2 {
+    display:flex;
+    position: absolute;
+    right:20px; bottom: 10px;
+    font-size: 15px;  
+    }
+    } 
