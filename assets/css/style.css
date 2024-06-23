@@ -334,6 +334,7 @@ a:hover{
     box-shadow: inset 0 0 80px  var(--hover);
 }
 
+/* ****************Media query properties *****************************************/
 
 @media screen and (max-width: 720px) {
     body {
