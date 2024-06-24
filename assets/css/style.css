@@ -299,12 +299,7 @@ h3{
     @media (max-width: 768px) {
         display: block;
     } 
-    @media (max-width: 992px) {
-        display: block;
-    } 
-    @media (max-width: 1000px) {
-        display: block;
-    } 
+   
 }
 .bottom  a{
     color:var(--bg);
@@ -336,7 +331,7 @@ a:hover{
 
 /* ****************Media query properties *****************************************/
 
-@media screen and (max-width: 60gi0px) {
+@media screen and (max-width: 600px) {
     body {
      
         background-color: var(--font);
@@ -409,13 +404,21 @@ a:hover{
   .writting-style{
       font-size: 8px;
   }
-  h3{
+h3{
       font-size:10px;
   }
-  .bottom a{
+   .bottom a{
     display:flex;
     justify-content: center;
   }
   
 }
+@media screen and  (max-width: 992px) {
+    .bottom li{display: block;}
+    
+} 
+@media screen and  (max-width: 1394px) {
+    .bottom li{display: block;}
+    
+} 
 /* ********************************* */
