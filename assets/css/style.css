@@ -336,7 +336,7 @@ a:hover{
 
 /* ****************Media query properties *****************************************/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 60gi0px) {
     body {
      
         background-color: var(--font);
