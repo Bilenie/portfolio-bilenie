@@ -1,8 +1,9 @@
 /* Add variables */
 :root{
-    --bg:rgb(54, 76, 116);
-    --font:#b7cad3;
-    --hover:#b8740d;
+    --bg:#3f87a6;
+    --font:#ebf8e1;
+    --hover:#f69d3c;
+    --grey:grey;
 }
 * {
     box-sizing: border-box;
@@ -10,7 +11,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(231, 212, 183);
+    background: linear-gradient(0.25turn, var(--hover), var(--bg), var(--grey));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* ************************************************************************ */
@@ -21,7 +22,7 @@ header {
     width:100%;
     justify-content:space-between;
     padding: 20px 20px 20px 0;
-    background-color: var(--hover);
+    background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover));     ;
     color: var(--font);;
 }
 header h1 {
@@ -43,7 +44,7 @@ header nav ul li {
     
 }
 header a{
-    color:var(--bg);
+    color:var(--font);
     border-width:1px;
     font-weight: bold; 
     padding:20px;  
@@ -127,7 +128,7 @@ h3{
     padding-left:2rem;
     padding-right: 2rem;
     margin-bottom: 20px;
-    color:var(--bg);
+    color:var(--font);
   
     @media (max-width: 768px) {
         display:flex;
@@ -192,7 +193,7 @@ h3{
 
     outline: 3px solid var(--bg);
     outline-offset: -3px;
-    border-radius: 30px;
+    border-radius: 50% 20% / 10% 40%;
     transition: all .5s ease-in-out;
       
 }
@@ -309,7 +310,7 @@ h3{
    
 }
 .bottom  a{
-    color:var(--bg);
+    color:var(--font);
     font-weight: bold;
     font-size: 20px; 
     padding: 20px; 
@@ -317,7 +318,7 @@ h3{
 /* ******************************************************************************** */
 /* Psudo class and Psudo element will be added*/
 a:hover{
-    color:var(--font);
+    color:var(--hover);
 }
 
 #surf:hover {
@@ -341,15 +342,14 @@ a:hover{
 @media screen and (max-width: 768px) {
     body {
      
-        background-color: var(--font);
+        background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover));;
     }
     /* *******header properties start here */
     header{
         display:flex;
         flex-direction: column; 
         align-items: center;
-        background-color: var(--font);
-    
+        background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover));
     }
     header h1{
         padding:10px;
